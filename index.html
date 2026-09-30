@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="refresh" content="30"/>
+<title>OKX VWAP scalper · paper</title>
+<style>
+  :root { --bg:#0c0d10; --card:#15171c; --line:#2a2e36; --txt:#e8eaed; --mut:#8b909a; --up:#3dd68c; --dn:#ff5d73; --accent:#9b7dff; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.45 ui-sans-serif,system-ui,sans-serif; background:var(--bg); color:var(--txt); }
+  header { padding:20px 24px 8px; border-bottom:1px solid var(--line); }
+  header h1 { margin:0; font-size:20px; }
+  header .sub { color:var(--mut); font-size:13px; margin-top:4px; }
+  .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; padding:16px 24px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .stat .k { color:var(--mut); font-size:11px; text-transform:uppercase; letter-spacing:.08em; }
+  .stat .v { font-size:22px; font-variant-numeric:tabular-nums; margin-top:4px; }
+  .up { color:var(--up); } .down { color:var(--dn); }
+  .wrap { padding:0 24px 32px; display:grid; gap:18px; }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--mut); margin:8px 0; }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+  th,td { text-align:left; padding:8px 12px; font-variant-numeric:tabular-nums; }
+  th { font-size:11px; color:var(--mut); text-transform:uppercase; letter-spacing:.06em; border-bottom:1px solid var(--line); }
+  tr+tr td { border-top:1px solid var(--line); }
+  .sym { font-weight:650; } .muted { color:var(--mut); }
+  .tape { padding:6px 0; border-bottom:1px solid var(--line); font-variant-numeric:tabular-nums; }
+  .paper { display:inline-block; background:#22183a; color:var(--accent); font-size:11px; padding:2px 8px; border-radius:999px; margin-left:8px; }
+</style></head><body>
+<header>
+  <h1>OKX VWAP pullback/reclaim <span class="paper">PAPER · vwap-v1 frozen to 100 sells</span></h1>
+  <div class="sub">Updated 2026-09-30 19:06:06 UTC · $10M+ · spread ≤0.3% · 5m trend · pullback to 9/21/VWAP · PRIMARY standard 1m/3m · no chase · fee 0.08% + slip 0.05%</div>
+</header>
+<div class="grid">
+  <div class="stat"><div class="k">Equity</div><div class="v">$3,000.00</div></div>
+  <div class="stat"><div class="k">Return</div><div class="v"><span class="up">+0.00%</span></div></div>
+  <div class="stat"><div class="k">Open</div><div class="v">0/3</div></div>
+  <div class="stat"><div class="k">Sells / wins / PF</div><div class="v">0 / 0 / —</div></div>
+</div>
+<div class="wrap">
+  <div>
+    <h2>Open positions</h2>
+    <table><thead><tr><th>Pair</th><th>Entry</th><th>Mark</th><th>uPnL</th><th>Level</th><th>MFE</th><th>MAE</th><th>Stop</th><th>T1</th></tr></thead>
+    <tbody><tr><td colspan='9' class='muted'>Flat — waiting for a VWAP/EMA pullback (standard entry).</td></tr></tbody></table>
+  </div>
+  <div>
+    <h2>Watchlist · 3 live</h2>
+    <table><thead><tr><th>Pair</th><th>24h</th><th>State</th><th>Kind</th><th>Turnover</th></tr></thead>
+    <tbody><tr><td class='sym'>CT-USDT</td><td><span class="up">+456.41%</span></td><td>waiting_pullback</td><td></td><td>$95,072,105</td></tr><tr><td class='sym'>HYPE-USDT</td><td><span class="up">+3.96%</span></td><td>ema21</td><td>STANDARD</td><td>$49,266,333</td></tr><tr><td class='sym'>NEAR-USDT</td><td><span class="up">+4.87%</span></td><td>ema21</td><td>STANDARD</td><td>$42,839,287</td></tr></tbody></table>
+  </div>
+  <div>
+    <h2>Tape</h2>
+    <div class='muted'>No fills yet.</div>
+  </div>
+</div>
+</body></html>
